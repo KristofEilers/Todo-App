@@ -65,7 +65,7 @@ form button:hover {
   align-items: center;
 }
 .task li {
-  flex: -1;
+  /* flex: 1; */
 }
 .delete-btn,
 .check-btn {
@@ -78,4 +78,7 @@ form button:hover {
 }
 .check-btn {
   background-color: aquamarine;
+}
+.task-item {
+  padding: 0rem 0.5rem;
 }

@@ -20,9 +20,8 @@ function addTask(event) {
   // Li
   const newTask = document.createElement("li");
   newTask.classList.add("task-item");
-  newTask.innerText = "hey";
+  newTask.innerText = taskInput.value;
   taskContainer.appendChild(newTask);
-
   //Delete Button
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
@@ -30,4 +29,6 @@ function addTask(event) {
   taskContainer.appendChild(deleteButton);
   // Append to List
   taskList.appendChild(taskContainer);
+  //Clear Task input after commiting the task
+  taskInput.value = "";
 }
