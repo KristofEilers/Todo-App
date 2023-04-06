@@ -12,16 +12,17 @@ function addTask(event) {
   //Task-List
   const taskContainer = document.createElement("div");
   taskContainer.classList.add("task");
-  // Li
-  const newTask = document.createElement("li");
-  newTask.classList.add("task-item");
-  newTask.innerText = "hey";
-  taskContainer.appendChild(newTask);
   //Check Mark Button
   const checkButton = document.createElement("button");
   checkButton.innerHTML = '<i class="fas fa-check"></i>';
   checkButton.classList.add("check-btn");
   taskContainer.appendChild(checkButton);
+  // Li
+  const newTask = document.createElement("li");
+  newTask.classList.add("task-item");
+  newTask.innerText = "hey";
+  taskContainer.appendChild(newTask);
+
   //Delete Button
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
