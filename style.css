@@ -65,11 +65,12 @@ form button:hover {
   align-items: center;
 }
 .task li {
-  /* flex: 1; */
+  flex: 1;
 }
 .delete-btn,
-.check-btn {
-  background-color: #2589c6;
+.check-btn,
+.edit-btn {
+  background-color: red;
   color: white;
   border: none;
   padding: 1rem;
@@ -79,6 +80,18 @@ form button:hover {
 .check-btn {
   background-color: aquamarine;
 }
+.edit-btn {
+  background-color: #2589c6;
+}
 .task-item {
   padding: 0rem 0.5rem;
+}
+.fa-trash,
+.fa-check,
+.fa-pen-to-square {
+  pointer-events: none;
+}
+.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
