@@ -11,22 +11,32 @@
     <link rel="stylesheet" href="style.css" />
     <title>To Do App</title>
   </head>
-  <header>
-    <h1>Taskmanager</h1>
-  </header>
-  <form>
-    <input type="text" class="task-input" placeholder="Your next goal!" />
-    <button class="task-btn" type="submit">
-      <i class="fas fa-plus-square"></i>
-    </button>
-  </form>
-  <div class="task-container">
-    <ul class="task-list">
-      <!-- Placeholder for Task-Items -->
-    </ul>
-  </div>
-
   <body>
+    <main>
+      <header>
+        <!-- <h1>Taskmanager</h1> -->
+      </header>
+      <div class="task-section">
+        <div class="task-container">
+          <h2>Taskmanager</h2>
+          <form>
+            <input
+              type="text"
+              class="task-input"
+              placeholder="Create new task!"
+            />
+            <button class="task-btn" type="submit">
+              Add Task
+              <!-- <i class="fas fa-plus-square"></i> -->
+            </button>
+          </form>
+
+          <ul class="task-list">
+            <!-- Placeholder for Task-Items -->
+          </ul>
+        </div>
+      </div>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
